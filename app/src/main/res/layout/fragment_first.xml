@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/full_border"
+    tools:context=".LineEditor">
+
+    <Button
+        android:id="@+id/openColorButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open \n colour picker"
+        app:layout_constraintBottom_toTopOf="@+id/go_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fillColorView"
+        app:layout_constraintTop_toBottomOf="@+id/openColorButton"
+         />
+
+    <Button
+        android:id="@+id/go_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stroke_type" />
+
+    <TextView
+        android:id="@+id/stroke_width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/width_entry"
+        android:text="@string/stroke_width_string"
+        app:layout_constraintBottom_toTopOf="@id/stroke_type"
+        app:layout_constraintEnd_toStartOf="@id/width_entry"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/width_entry"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:autofillHints="Enter a number"
+        android:inputType="number"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@id/stroke_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/stroke_width"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stroke_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_first_fragment"
+        app:layout_constraintBottom_toTopOf="@id/go_button"
+        app:layout_constraintEnd_toStartOf="@id/stroke_spinner"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/stroke_spinner"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/go_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/stroke_type"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="221dp" />
+
+    <TextView
+        android:id="@+id/colorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stroke_colour"
+        app:layout_constraintBottom_toTopOf="@+id/go_button"
+        app:layout_constraintEnd_toStartOf="@id/openColorButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stroke_type"
+        app:layout_constraintVertical_bias="0.413" />
+
+    <Button
+        android:id="@+id/openColorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open \n colour picker"
+        app:layout_constraintBottom_toTopOf="@+id/go_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/colorTextView"
+        app:layout_constraintTop_toBottomOf="@+id/stroke_spinner"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <TextView
+        android:id="@+id/fillColorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fill_colour"
+        app:layout_constraintBottom_toTopOf="@+id/go_button"
+        app:layout_constraintEnd_toStartOf="@+id/openColorButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorTextView"
+        app:layout_constraintVertical_bias="0.61" />
+</androidx.constraintlayout.widget.ConstraintLayout>

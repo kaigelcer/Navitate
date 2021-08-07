@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+    android:id = "@+id/mapLayout">
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <fragment
+        android:id="@+id/lineEditor"
+        class="com.example.navitate.LineEditor"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_margin="50dp"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/usernamePasswordEntry"
+        android:layout_gravity="center"
+        class="com.example.navitate.UsernamePasswordEntry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:id="@+id/sv_location"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_group_list_selector"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#80000000"
+        android:layout_gravity="bottom"
+        >
+
+        <RadioButton
+            android:id="@+id/returnHomeButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/return_home"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            />
+        <View
+            android:id="@+id/VerticalLine"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#aaa" />
+
+        <RadioButton
+            android:id="@+id/annotate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/annotate_map" />
+
+        <View
+            android:id="@+id/VerticalLine2"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#aaa" />
+
+        <RadioButton
+            android:id="@+id/postNavitation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/post_navitation"
+            android:layout_weight="1"
+            />
+        <View
+            android:id="@+id/VerticalLine4"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#aaa" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio_group_annotate"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:id="@+id/circleButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/circle"
+            android:textSize="30sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:id="@+id/lineButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/line"
+            android:textSize="30sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/drawButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/draw"
+            android:textSize="30sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            />
+
+
+
+    </RadioGroup>
+</FrameLayout>

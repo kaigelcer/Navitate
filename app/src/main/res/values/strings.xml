@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Navitate</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Draw</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Stroke Type</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="open_map">New Navitation</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="return_home">Return Home</string>
+    <string name="annotate_map">Annotate map</string>
+    <string name="blank_button">Blank</string>
+    <string name="post_navitation">Post</string>
+    <string name="circle">O</string>
+    <string name="point">•</string>
+    <string name="line">—</string>
+    <string name="draw">~</string>
+    <string name="stroke_colour">Stroke Colour</string>
+    <string name="open_colour_picker">Open Colour Picker</string>
+    <string name="open_color_picker">Open \n Color Picker</string>
+    <string name="stroke_width_string">Stroke Width (1–100)</string>
+    <string name="fill_colour">Fill Colour</string>
+    <string name="browse_navitations">Browse Navitations</string>
+    <string name="title_activity_browse">BrowseActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_open_navitation">Map</string>
+    <string name="login">Log in</string>
+    <string name="update">Update</string>
+    <string name="edit">Edit</string>
+</resources>
